@@ -26,7 +26,7 @@ public:
     else if (posisi == 8) return 4;
     else if (posisi == 9) return 2;
     else if (posisi == 10) return 1;
-    else return 0;6
+    else return 0;
     }
 
     void printInfo() {
