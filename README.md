@@ -1,41 +1,52 @@
-# Soal 2 : Simulasi Pertarungan Finn vs Ice King
+<<<<<<< HEAD
+# proglan-p1-5024241072
+=======
+# Soal 1 : Sistem poin pembalap F1
 
-## KERJAKAN MAIN SAJA
+## JANGAN UBAH MAIN
 
 ## Deskripsi
-Pada soal ini, kalian diminta untuk melengkapi bagian `main` pada file `soal2.cpp` untuk mensimulasikan pertarungan antara dua karakter, yaitu Finn dan Ice King. Pertarungan dilakukan secara bergantian hingga salah satu karakter kalah (health = 0). Kalian juga diminta untuk menentukan siapa yang mendapat giliran pertama berdasarkan input.
+Kalian adalah seorang race director di F1. Tugas kalian adalah menampilkan scoring di TV setelah race. Input dari marshall adalah jumlah pembalap dan posisi berapa mereka finish, dimana tugas kalian mengolah data tersebut agar media tidak bingung saat menampilkan scoring hasil balapan.
 
 ## Input
-- Health dan attack power untuk Finn.
-- Health dan attack power untuk Ice King.
-- Penentuan siapa yang mendapat giliran pertama.
+- Jumlah pembalap.
+- Nama pembalap dan posisi finish mereka.
 
 ## Output
-- Status setiap karakter setelah setiap serangan.
-- Nama pemenang setelah simulasi selesai.
+- Poin yang diperoleh setiap pembalap berdasarkan posisi finish.
 
 ## Expected Input
 ```
-100 15
-120 10
-finn
+3
+verstappen 6
+russell 10
+hulkenberg 1
 ```
 
 ## Expected Output
 ```
-Finn has 100 health remaining.
-Ice King has 120 health remaining.
-Finn attacks Ice King!
-Ice King has 105 health remaining.
-Ice King attacks Finn!
-Finn has 90 health remaining.
-...
-Ice King has 0 health remaining.
-Finn wins the battle!
+Point yang diperoleh verstappen adalah +8
+Point yang diperoleh russell adalah +1
+Point yang diperoleh hulkenberg adalah +25
 ```
 
 ## Catatan
-- Gunakan objek `Character` untuk kedua karakter.
-- Pastikan simulasi berjalan hingga salah satu karakter kalah.
-- Cetak status setiap karakter setelah setiap serangan.
-- Cetak pemenang di akhir simulasi.
+- Lengkapi blok kode yang ada di `soal1.cpp`.
+- Gunakan modul tentang constructor apabila belum paham, atau kalian bisa mencari referensi.
+- Jangan gunakan AI karena akan menumpulkan dasar pemrogramanmu. Jika bingung, cari referensi di Stack Overflow.
+
+## F1 Scoring System
+Gunakan aturan poin F1 untuk menghitung poin berdasarkan posisi finish:
+  - Posisi 1: +25 poin
+  - Posisi 2: +18 poin
+  - Posisi 3: +15 poin
+  - Posisi 4: +12 poin
+  - Posisi 5: +10 poin
+  - Posisi 6: +8 poin
+  - Posisi 7: +6 poin
+  - Posisi 8: +4 poin
+  - Posisi 9: +2 poin
+  - Posisi 10: +1 poin
+  - Posisi di luar 10: 0 poin
+
+>>>>>>> bf925e9 (init)
